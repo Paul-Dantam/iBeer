@@ -11,26 +11,32 @@ COLORS:
 light tan: #eeebda
 
 */
+#body{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
 body{
     font-family: 'Noto Serif', serif;
     line-height: 1.8;
     margin: 0;
-    background-color: #eeebda;
-     display:flex; 
-     justify-content: center; 
+    background-color: #eeebda; 
 }
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
     margin-top: 0;
 }
-img{
-    max-width: 100%;
+ img{ 
     padding: 0;
     margin: 0;
-    display: block;
 }
 .wrapper{
     width: 1000px;
+     margin: auto; 
+     max-width: 65rem; 
+     /* display:flex;  */
+     justify-content:center; 
 
 
     /*
@@ -41,7 +47,7 @@ img{
     */
 }
 #site-header{
-flex-direction: row;
+/* flex-direction: row; */
 
 }
 #site-header div{
@@ -72,6 +78,7 @@ flex-direction: row;
 #main-navigation{
     background: #444;
     padding: 10px;
+    min-width: 1000px;
 
 
     /*
@@ -104,7 +111,11 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    flex-direction:column;
+    max-width: 600px;
+    display:flex;
+     flex-direction:column; 
+     flex-wrap:wrap;
+     justify-content: center;
 
     /*
         TODO: 
@@ -141,8 +152,9 @@ article{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
-    display:flex;
-    flex-wrap:wrap;
+     /* display:flex;  */
+       /* flex-wrap:wrap;    */
+    margin: 1rem;
 }
 article h2{
     line-height: 1em;
@@ -161,16 +173,19 @@ article time{
     color: #666;
 }
 article img{
-
-    justify-content:center;
+    max-width:40%;
+    align-self:center;
+    float: right;
 
 }
 article footer p{
-    /*
-        TODO: 
-        - Style the article footer
-        HINT: Look to the article header;
-    */
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0px 0;
+    padding: 10px 0 0px 0;
+    border-top: 1px solid #ccc;
+    text-transform: uppercase;
 }
 #site-footer{
     
@@ -181,9 +196,15 @@ article footer p{
     */
 }
 
+article>header{
+    /* flex-shrink:1; */
+}
 
+footer > p{
 
-
+    border-top:gray;
+    border: 2px 0px 0px 0px;
+}
 
 
 

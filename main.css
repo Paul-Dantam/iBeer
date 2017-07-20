@@ -16,6 +16,8 @@ body{
     line-height: 1.8;
     margin: 0;
     background-color: #eeebda;
+    display:flex;
+    justify-content: center;
 }
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
@@ -30,6 +32,8 @@ img{
 .wrapper{
     width: 1000px;
 
+
+
     /*
         TODO: 
         - Center up the page
@@ -38,21 +42,15 @@ img{
     */
 }
 #site-header{
-    /*
-        TODO
-        - Flexbox property here
-    */
+/* display:flex; */
+flex-direction: row;
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
 
-    /*
-        TODO: 
-        - Add a background image "header-img.jpg"
-        make sure that the path to the image is correct
-    */
+    background-image: url("/Users/pauldantam/Documents/TheIronYard/WeeklyProjects/Week1/day4/project/ibeer_starter_files/img/header-img.jpg");
 
     background-size: cover;
     background-position: right bottom;
@@ -70,13 +68,12 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    /*
-        TODO: 
-        - Use the script font: 'Dancing Script' fot this text
-    */
+    font-family: "Dancing Script";
 }
 #main-navigation{
     background: #444;
+    padding: 10px;
+
 
     /*
         TODO: 
@@ -84,11 +81,11 @@ img{
     */
 }
 #main-navigation a{
-    display: block;
+     /* display: block;  */
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 30px;
 
     /*
         TODO: 
@@ -118,6 +115,9 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+
+    
+
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
@@ -140,6 +140,7 @@ article{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
+    display: flex;
 }
 article h2{
     line-height: 1em;
@@ -158,11 +159,9 @@ article time{
     color: #666;
 }
 article img{
-    /*
-        TODO: 
-        - Float article images to the right
-        and match sizes and spacing to the mockup
-    */
+    /* display:flex; */
+align-content: flex-end;
+
 }
 article footer p{
     /*

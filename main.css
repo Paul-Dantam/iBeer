@@ -11,11 +11,11 @@ COLORS:
 light tan: #eeebda
 
 */
-#body{
+/* #body{
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
-}
+} */
 
 body{
     font-family: 'Noto Serif', serif;
@@ -34,7 +34,7 @@ h1, h2, h3{
 .wrapper{
     width: 1000px;
      margin: auto; 
-     max-width: 65rem; 
+     /* max-width: 65rem;  */
      /* display:flex;  */
      justify-content:center; 
 
@@ -191,8 +191,14 @@ article footer p{
     text-transform: uppercase;
 }
 #site-footer{
-    
+
     background: #333;
+    width: 100%; 
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    font-family: "Sans Serif";
     /*
         TODO: 
         - Style the site footer

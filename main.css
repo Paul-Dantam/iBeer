@@ -54,7 +54,7 @@ h1, h2, h3{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-    background-image: url("/Users/pauldantam/Documents/TheIronYard/WeeklyProjects/Week1/day4/project/ibeer_starter_files/img/header-img.jpg");
+    background-image: url("./img/header-img.jpg");
     background-size: cover;
     background-position: right bottom;
     
